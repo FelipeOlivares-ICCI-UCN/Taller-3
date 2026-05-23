@@ -15,4 +15,11 @@ public class Spell {
     {
         return this.damage;
     }
+
+    public Spell(String name, String type, int damage)
+    {
+        this.name = name;
+        this.type = type;
+        this.damage = damage;
+    }
 }
