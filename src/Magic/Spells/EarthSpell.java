@@ -1,4 +1,4 @@
-package Magic;
+package Magic.Spells;
 
 public class EarthSpell extends Spell {
     private int defenseUpgrade;

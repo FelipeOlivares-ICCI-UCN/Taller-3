@@ -1,5 +1,7 @@
 package Magic;
 
+import Magic.Spells.Spell;
+
 import java.util.ArrayList;
 
 public class Magician {

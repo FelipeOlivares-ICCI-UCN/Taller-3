@@ -1,4 +1,4 @@
-package Magic;
+package Magic.Spells;
 
 public class WaterSpell extends Spell {
     private int quantHeal;

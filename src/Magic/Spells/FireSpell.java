@@ -1,4 +1,4 @@
-package Magic;
+package Magic.Spells;
 
 public class FireSpell extends Spell {
     private int burnDuration;

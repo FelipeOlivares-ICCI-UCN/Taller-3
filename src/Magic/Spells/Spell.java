@@ -1,4 +1,4 @@
-package Magic;
+package Magic.Spells;
 
 public class Spell {
     private String name;

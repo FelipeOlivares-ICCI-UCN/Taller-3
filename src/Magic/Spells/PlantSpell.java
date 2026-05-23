@@ -1,4 +1,4 @@
-package Magic;
+package Magic.Spells;
 
 public class PlantSpell extends Spell {
     private int stunDuration;
