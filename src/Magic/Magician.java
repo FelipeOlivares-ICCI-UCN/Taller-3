@@ -7,6 +7,10 @@ public class Magician {
 
     private ArrayList<Spell> magicianSpells;
 
+    public Magician(String name)
+    {
+        this.name = name;
+    }
 
 
 
