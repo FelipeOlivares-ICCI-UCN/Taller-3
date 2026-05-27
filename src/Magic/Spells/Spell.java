@@ -22,4 +22,11 @@ public class Spell {
         this.type = type;
         this.damage = damage;
     }
+    
+    @Override
+    public String toString() {
+        return "Spell: " + name +
+                ", Type: " + type +
+                ", Damage: " + damage;
+    }
 }
