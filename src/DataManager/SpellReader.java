@@ -21,7 +21,7 @@ public class SpellReader {
         }
     }
 
-    public ArrayList<Spell> readSpellFile()
+    public ArrayList<Spell> readFile()
     {
         ArrayList<Spell> spellArr = new ArrayList<>();
         while (spellScanner.hasNextLine())
