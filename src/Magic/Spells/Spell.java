@@ -11,6 +11,11 @@ public class Spell {
 
     }
 
+    public String getName()
+    {
+        return this.name;
+    }
+
     public int getDamage()
     {
         return this.damage;
@@ -22,7 +27,7 @@ public class Spell {
         this.type = type;
         this.damage = damage;
     }
-    
+
     @Override
     public String toString() {
         return "Spell: " + name +
