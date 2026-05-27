@@ -20,6 +20,14 @@ public class Magician {
         magicianSpells.add(newSpell);
     }
 
-
-
+    //Used only for a cleaner toString method
+    private ArrayList<String> getSpellsNames()
+    {
+        ArrayList<String> names = new ArrayList<>();
+        for (Spell spell: magicianSpells)
+        {
+            names.add(spell.getName());
+        }
+        return names;
+    }
 }
