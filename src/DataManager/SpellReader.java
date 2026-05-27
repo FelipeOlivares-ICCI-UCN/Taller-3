@@ -13,9 +13,9 @@ public class SpellReader {
 
     public SpellReader()
     {
-        try (Scanner sc = new Scanner(new File("./data/Hechizos.txt")))
+        try
         {
-            this.spellScanner = sc;
+            this.spellScanner = new Scanner(new File("./data/Hechizos.txt"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Cant find the Hechizos.txt file at ./data/ directory ", e);
         }
