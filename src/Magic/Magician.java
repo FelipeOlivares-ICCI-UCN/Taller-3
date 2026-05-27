@@ -7,11 +7,12 @@ import java.util.ArrayList;
 public class Magician {
     private String name;
 
-    private ArrayList<Spell> magicianSpells = new ArrayList<>();
+    private ArrayList<Spell> magicianSpells;
 
-    public Magician(String name)
+    public Magician(String name, ArrayList<Spell> spells)
     {
         this.name = name;
+        this.magicianSpells = spells;
     }
 
     public void addSpell(Spell newSpell)
