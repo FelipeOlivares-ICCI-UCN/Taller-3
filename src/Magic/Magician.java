@@ -15,9 +15,9 @@ public class Magician {
         this.magicianSpells = spells;
     }
 
-    public void addSpell(Spell newSpell)
-    {
-        magicianSpells.add(newSpell);
+    @Override
+    public String toString() {
+        return "Magician " + name + " with their spells " + getSpellsNames();
     }
 
     //Used only for a cleaner toString method
