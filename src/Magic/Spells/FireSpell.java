@@ -15,5 +15,10 @@ public class FireSpell extends Spell {
 
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", Burn duration : " + this.burnDuration;
+    }
+
 
 }

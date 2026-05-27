@@ -17,5 +17,11 @@ public class PlantSpell extends Spell {
 
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", Stun duration: " + this.stunDuration +
+                ", Number of plants: " + this.quantPlants;
+    }
+
 
 }
