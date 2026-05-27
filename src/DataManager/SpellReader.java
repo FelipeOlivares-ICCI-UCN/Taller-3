@@ -34,6 +34,7 @@ public class SpellReader {
         return spellArr;
     }
 
+
     private Spell spellParser(String data)
     {
         String[] spellData = data.split(";");
@@ -55,21 +56,21 @@ public class SpellReader {
 
         else if (spellType.equals("Planta"))
         {
-            int stunDuration = Integer.parseInt(spellData[3]);
-            int quantPlant = Integer.parseInt(spellData[4]);
+            int stunDuration = Integer.parseInt(spellData[3].split(",")[0]);
+            int quantPlant = Integer.parseInt(spellData[3].split(",")[1]);
 
             return new PlantSpell(spellName, spellType, spellDamage, stunDuration, quantPlant);
         }
 
         else if (spellType.equals("Agua"))
         {
-            int quantHeal = Integer.parseInt(spellData[3]);
-            int waterPressure = Integer.parseInt(spellData[4]);
+            int quantHeal = Integer.parseInt(spellData[3].split(",")[0]);
+            int waterPressure = Integer.parseInt(spellData[3].split(",")[1]);
 
             return new WaterSpell(spellName, spellType, spellDamage, quantHeal, waterPressure);
         }
 
-        //Only used to return something if everything else fails :v
+        //Only used to return something if everything else fails.
         return new Spell(spellName, spellType, spellDamage);
 
     }
