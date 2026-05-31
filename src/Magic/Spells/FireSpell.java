@@ -8,6 +8,12 @@ public class FireSpell extends Spell {
         this.burnDuration = burnDuration;
     }
 
+    public FireSpell(String[] data)
+    {
+        super(data);
+        this.burnDuration = Integer.parseInt(data[3]);
+    }
+
     @Override
     public int calculatePoints()
     {
