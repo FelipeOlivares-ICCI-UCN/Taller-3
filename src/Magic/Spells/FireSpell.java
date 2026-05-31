@@ -14,11 +14,4 @@ public class FireSpell extends Spell {
         return super.getDamage() * this.burnDuration;
 
     }
-
-    @Override
-    public String toString() {
-        return super.toString() + ", Burn duration : " + this.burnDuration;
-    }
-
-
 }
