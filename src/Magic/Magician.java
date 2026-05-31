@@ -15,19 +15,5 @@ public class Magician {
         this.magicianSpells = spells;
     }
 
-    @Override
-    public String toString() {
-        return "Magician " + name + " with their spells " + getSpellsNames();
-    }
-
-    //Used only for a cleaner toString method
-    private ArrayList<String> getSpellsNames()
-    {
-        ArrayList<String> names = new ArrayList<>();
-        for (Spell spell: magicianSpells)
-        {
-            names.add(spell.getName());
-        }
-        return names;
-    }
+    //Delete getSpellNames and toString method.
 }
