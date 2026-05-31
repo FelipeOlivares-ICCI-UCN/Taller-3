@@ -1,4 +1,4 @@
-package DataManager;
+package Magic.Factory;
 
 import Magic.Spells.*;
 
