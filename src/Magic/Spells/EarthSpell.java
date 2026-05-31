@@ -15,9 +15,4 @@ public class EarthSpell extends Spell {
         return (super.getDamage() * this.defenseUpgrade) / 2;
 
     }
-
-    @Override
-    public String toString() {
-        return super.toString() + ", Defense upgrade: " + this.defenseUpgrade;
-    }
 }
