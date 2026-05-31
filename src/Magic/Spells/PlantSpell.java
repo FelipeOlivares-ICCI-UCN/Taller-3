@@ -16,12 +16,4 @@ public class PlantSpell extends Spell {
         return super.getDamage() + (this.stunDuration + this.quantPlants);
 
     }
-
-    @Override
-    public String toString() {
-        return super.toString() + ", Stun duration: " + this.stunDuration +
-                ", Number of plants: " + this.quantPlants;
-    }
-
-
 }
