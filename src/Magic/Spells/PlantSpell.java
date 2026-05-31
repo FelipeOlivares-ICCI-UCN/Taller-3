@@ -10,6 +10,13 @@ public class PlantSpell extends Spell {
         this.quantPlants = quantPlants;
     }
 
+    public PlantSpell(String[] data)
+    {
+        super(data);
+        this.stunDuration = Integer.parseInt(data[3].split(",")[0]);
+        this.quantPlants = Integer.parseInt(data[3].split(",")[1]);
+    }
+
     @Override
     public int calculatePoints()
     {
