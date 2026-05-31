@@ -28,6 +28,13 @@ public class Spell {
         this.damage = damage;
     }
 
+    public Spell(String[] data)
+    {
+        this.name = data[0];
+        this.type = data[1];
+        this.damage = Integer.parseInt(data[2]);
+    }
+
     @Override
     public String toString() {
         return "Spell: " + name +
