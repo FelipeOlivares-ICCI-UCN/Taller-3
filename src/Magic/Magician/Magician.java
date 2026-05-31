@@ -1,4 +1,4 @@
-package Magic;
+package Magic.Magician;
 
 import Magic.Spells.Spell;
 
@@ -15,5 +15,5 @@ public class Magician {
         this.magicianSpells = spells;
     }
 
-    //Delete getSpellNames and toString method.
+
 }
