@@ -15,13 +15,4 @@ public class WaterSpell extends Spell {
     {
         return (super.getDamage() + this.quantHeal + this.waterPressure) * 2;
     }
-
-
-
-    @Override
-    public String toString() {
-        return super.toString() + ", Life healed: " + this.quantHeal
-                + ", Water Pressure: " + this.waterPressure ;
-    }
-
 }
