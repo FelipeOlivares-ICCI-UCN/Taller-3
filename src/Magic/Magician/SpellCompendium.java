@@ -1,6 +1,7 @@
-package DataManager;
+package Magic.Magician;
 
 import Magic.Spells.Spell;
+
 import java.util.ArrayList;
 
 public class SpellCompendium
