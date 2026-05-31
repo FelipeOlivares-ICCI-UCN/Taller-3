@@ -9,6 +9,12 @@ public class WaterSpell extends Spell {
         this.quantHeal = quantHeal;
         this.waterPressure = waterPressure;
     }
+    public WaterSpell(String[] data)
+    {
+        super(data);
+        this.quantHeal = Integer.parseInt(data[3].split(",")[0]);
+        this.waterPressure = Integer.parseInt(data[3].split(",")[1]);
+    }
 
     @Override
     public int calculatePoints()
