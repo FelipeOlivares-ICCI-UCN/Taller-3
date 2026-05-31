@@ -26,8 +26,8 @@ public class SpellReader {
         ArrayList<Spell> spellArr = new ArrayList<>();
         while (spellScanner.hasNextLine())
         {
-            String data = spellScanner.nextLine();
-            spellArr.add(spellParser(data));
+            String[] data = spellScanner.nextLine().split(";");
+            spellArr.add(SpellFactory.getSpell(data));
 
         }
 
