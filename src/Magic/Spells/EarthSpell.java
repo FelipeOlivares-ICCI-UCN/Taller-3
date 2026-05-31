@@ -9,6 +9,13 @@ public class EarthSpell extends Spell {
         this.defenseUpgrade = defenseUpgrade;
     }
 
+    public EarthSpell(String[] data)
+    {
+        super(data);
+        this.defenseUpgrade = Integer.parseInt(data[3]);
+
+    }
+
     @Override
     public int calculatePoints()
     {
