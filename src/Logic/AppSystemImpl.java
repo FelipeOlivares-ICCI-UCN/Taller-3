@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class AppSystemImpl implements AppSystem {
 
     public static ArrayList<Spell> globalSpells = new ArrayList<>();
+    public static ArrayList<Magician> magiciansArray = new ArrayList<>();
 
     @Override
     public void startMenu()
