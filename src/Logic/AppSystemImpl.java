@@ -29,8 +29,22 @@ public class AppSystemImpl implements AppSystem {
 
     @Override
     public void loadMageData(String[] data) {
+        String name = data[0];
+        String[] spellNames = data[1].split("\\|");
 
+        Magician magician = new Magician(name);
+
+        for (int i = 1; i < spellNames.length; i++) {
+            String spellName = spellNames[i];
+
+            for (Spell spell : globalSpells) {
+                if (spell.getName().equals(spellName)) {
+                    magician.addSpell(spell);
+                    break;
+                }
+            }
+        }
+
+        magiciansArray.add(magician);
     }
-
-
 }
