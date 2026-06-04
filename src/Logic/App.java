@@ -15,6 +15,7 @@ public class App
         try
         {
             readSpellFile();
+            readMagicianFile();
         }
 
         catch (Exception e)
