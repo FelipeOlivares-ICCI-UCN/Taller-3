@@ -22,5 +22,9 @@ public class Magician {
     }
 
 
+    public void addSpell(Spell spell)
+    {
+        wizardSpells.add(spell);
+    }
 
 }
