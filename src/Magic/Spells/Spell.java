@@ -1,6 +1,6 @@
 package Magic.Spells;
 
-public class Spell {
+public abstract class Spell {
     private String name;
     private String type;
     private int damage;
