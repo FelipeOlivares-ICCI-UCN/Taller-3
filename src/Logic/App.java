@@ -47,6 +47,7 @@ public class App
         Scanner lector = new Scanner(arch);
         while (lector.hasNextLine()) {
             String[] data = lector.nextLine().split(";");
+            s.loadMageData(data);
         }
         lector.close();
     }
