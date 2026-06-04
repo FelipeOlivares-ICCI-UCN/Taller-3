@@ -14,6 +14,10 @@ public class Magician {
 
     }
 
+    public Magician(String name)
+    {
+        this.name = name;
+    }
 
 
 
