@@ -1,6 +1,6 @@
 package Logic;
 
-public interface System
+public interface AppSystem
 {
     void startMenu();
     void loadSpellData(String[] data);
