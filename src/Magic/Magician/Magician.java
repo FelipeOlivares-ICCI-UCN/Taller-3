@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public class Magician {
     private String name;
+    private ArrayList<Spell> wizardSpells = new ArrayList<>();
+
 
     public Magician(String[] data)
     {
