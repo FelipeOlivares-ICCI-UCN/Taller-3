@@ -27,4 +27,9 @@ public class Magician {
         wizardSpells.add(spell);
     }
 
+    @Override
+    public String toString()
+    {
+        return "Wizard" + this.name + " Spells: " + wizardSpells.toString();
+    }
 }
