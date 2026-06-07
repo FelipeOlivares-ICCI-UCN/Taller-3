@@ -1,10 +1,11 @@
 package Magic.Magician;
 
+import Magic.Scored;
 import Magic.Spells.Spell;
 
 import java.util.ArrayList;
 
-public class Magician {
+public class Magician implements Scored {
     private String name;
     private ArrayList<Spell> wizardSpells = new ArrayList<>();
 
