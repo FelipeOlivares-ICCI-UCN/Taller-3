@@ -17,7 +17,7 @@ public class EarthSpell extends Spell {
     }
 
     @Override
-    public int calculatePoints()
+    public int getScore()
     {
         return (super.getDamage() * this.defenseUpgrade) / 2;
 

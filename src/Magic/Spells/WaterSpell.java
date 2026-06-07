@@ -17,7 +17,7 @@ public class WaterSpell extends Spell {
     }
 
     @Override
-    public int calculatePoints()
+    public int getScore()
     {
         return (super.getDamage() + this.quantHeal + this.waterPressure) * 2;
     }

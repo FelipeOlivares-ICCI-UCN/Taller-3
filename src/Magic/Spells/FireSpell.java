@@ -15,7 +15,7 @@ public class FireSpell extends Spell {
     }
 
     @Override
-    public int calculatePoints()
+    public int getScore()
     {
         return super.getDamage() * this.burnDuration;
 

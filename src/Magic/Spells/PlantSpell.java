@@ -18,7 +18,7 @@ public class PlantSpell extends Spell {
     }
 
     @Override
-    public int calculatePoints()
+    public int getScore()
     {
         return super.getDamage() + (this.stunDuration + this.quantPlants);
 
