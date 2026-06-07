@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class App
 {
+    static Scanner sc = new Scanner(System.in);
     private static AppSystem s = new AppSystemImpl();
 
     static void main(String[] args) throws FileNotFoundException
