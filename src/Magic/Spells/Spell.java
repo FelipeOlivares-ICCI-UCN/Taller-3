@@ -41,8 +41,6 @@ public abstract class Spell implements Scored {
 
     @Override
     public String toString() {
-        return "Spell: " + name +
-                ", Type: " + type +
-                ", Damage: " + damage;
+        return "Spell '" + this.name + "'";
     }
 }
