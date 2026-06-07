@@ -12,7 +12,7 @@ public class AppSystemImpl implements AppSystem {
     public static ArrayList<Magician> magiciansArray = new ArrayList<>();
 
     @Override
-    public void startMenu()
+    public void adminMenu(int option)
     {
         for (Spell spell: globalSpells)
         {
