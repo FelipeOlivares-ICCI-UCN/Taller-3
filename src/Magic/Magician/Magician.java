@@ -36,7 +36,6 @@ public class Magician implements Scored {
     @Override
     public String toString()
     {
-        return "Wizard" + this.name + " Spells: " + wizardSpells.toString();
         return "Wizard '" + this.name + "'";
     }
 
