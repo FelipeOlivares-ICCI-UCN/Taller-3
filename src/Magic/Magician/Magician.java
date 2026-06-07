@@ -28,9 +28,26 @@ public class Magician implements Scored {
         wizardSpells.add(spell);
     }
 
+    public String getName()
+    {
+        return this.name;
+    }
+
     @Override
     public String toString()
     {
         return "Wizard" + this.name + " Spells: " + wizardSpells.toString();
+        return "Wizard '" + this.name + "'";
+    }
+
+    public int getScore()
+    {
+        int i = 0;
+        for (Spell sp: wizardSpells)
+        {
+            i += sp.getScore();
+
+        }
+        return i;
     }
 }
