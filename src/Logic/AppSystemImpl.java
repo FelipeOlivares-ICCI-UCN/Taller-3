@@ -47,4 +47,144 @@ public class AppSystemImpl implements AppSystem {
 
         magiciansArray.add(magician);
     }
+
+    public <T extends Scored> void quickSort(ArrayList<T> list, int low, int high) {
+        if (low < high) {
+            int pivotIndex = partition(list, low, high);
+
+            quickSort(list, low, pivotIndex - 1);
+            quickSort(list, pivotIndex + 1, high);
+        }
+    }
+
+    private <T extends Scored> int partition(ArrayList<T> list, int low, int high) {
+        int pivot = list.get(high).getScore();
+
+        int i = low - 1;
+
+        for (int j = low; j < high; j++) {
+            // Descending order
+            if (list.get(j).getScore() >= pivot) {
+                i++;
+                swap(list, i, j);
+            }
+        }
+
+        swap(list, i + 1, high);
+        return i + 1;
+    }
+
+
+
+    private  <T extends Scored> void swap(ArrayList<T> list, int i, int j) {
+        T temp = list.get(i);
+        list.set(i, list.get(j));
+        list.set(j, temp);
+    }
+
+    private void printTopSpells()
+    {
+        if (globalSpells.isEmpty()) {
+            System.out.println("No spells available.");
+            return;
+        }
+
+        if (globalSpells.size() > 10)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                System.out.println((i + 1) + ") " + globalSpells.get(i));
+            }
+
+        }
+
+        else
+        {
+            int i = 1;
+            for (Spell spell : globalSpells)
+            {
+                System.out.println(i + ")" + spell);
+                i++;
+            }
+        }
+
+
+    }
+
+
+    private void printTopWizards()
+    {
+        if (magiciansArray.isEmpty()) {
+            System.out.println("No wizard available.");
+            return;
+        }
+
+        if (magiciansArray.size() > 3)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                System.out.println((i + 1) + ") " + magiciansArray.get(i));
+            }
+
+        }
+
+        else
+        {
+            int i = 1;
+            for (Magician wizard : magiciansArray)
+            {
+                System.out.println(i + ")" + wizard);
+                i++;
+            }
+        }
+
+    }
+
+    private void printAllSpells(boolean shouldPrintScore)
+    {
+        if (globalSpells.isEmpty()) {
+            System.out.println("No spells available.");
+            return;
+        }
+
+        int i = 1;
+        for (Spell spell : globalSpells)
+        {
+            if (shouldPrintScore)
+            {
+                System.out.println(i + ") " + spell + " - " + spell.getScore());
+            }
+            else
+            {
+                System.out.println(i + ") " + spell);
+            }
+        }
+
+    }
+
+    private void printAllWizards(boolean shouldPrintScore)
+    {
+        if (magiciansArray.isEmpty()) {
+            System.out.println("No wizard available.");
+            return;
+        }
+
+        int i = 1;
+        for (Magician wizard : magiciansArray)
+        {
+            if (shouldPrintScore)
+            {
+                System.out.println(i + ") " + wizard + " - " + wizard.getScore());
+            }
+            else
+            {
+                System.out.println(i + ") " + wizard);
+            }
+            i++;
+        }
+    }
+
+
+
 }
+
