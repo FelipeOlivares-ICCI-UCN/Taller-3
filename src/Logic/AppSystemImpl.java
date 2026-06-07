@@ -14,11 +14,49 @@ public class AppSystemImpl implements AppSystem {
     @Override
     public void adminMenu(int option)
     {
-        for (Spell spell: globalSpells)
-        {
-            System.out.println(spell.getName());
+        quickSort(globalSpells, 0, globalSpells.size() - 1);
+        quickSort(magiciansArray, 0, magiciansArray.size() - 1);
 
+        System.out.println("Option " + option + " yet TBA");
+
+    }
+
+    @Override
+    public void analysisMenu(int option) {
+
+        quickSort(globalSpells, 0, globalSpells.size() - 1);
+        quickSort(magiciansArray, 0, magiciansArray.size() - 1);
+
+        if (option == 1)
+        {
+            printTopSpells();
         }
+
+        if (option == 2)
+        {
+            printTopWizards();
+        }
+
+        if (option == 3)
+        {
+            printAllSpells(false);
+        }
+        if (option == 4)
+        {
+            printAllWizards(false);
+        }
+        if (option == 5)
+        {
+            printAllSpells(true);
+        }
+        if (option == 6)
+        {
+            printAllWizards(true);
+        }
+
+
+
+
     }
 
     @Override
