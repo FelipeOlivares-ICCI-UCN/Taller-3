@@ -8,4 +8,4 @@ Compile and run the App.java
 - /src:
   - /Logic: Software logic.
   - /Magic: Contains the objects to solve the problem
-
+- /required: Contains model diagram as pdf
